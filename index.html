@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Greenform Outdoors</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #f2f8f3;
+      color: #222;
+      line-height: 1.6;
+    }
+    header {
+      background: #356859;
+      color: #fff;
+      padding: 1.5rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    .logo {
+      display: flex;
+      align-items: center;
+    }
+    .logo img {
+      height: 50px;
+      margin-right: 12px;
+    }
+    nav a {
+      margin: 0 15px;
+      color: #fff;
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #b7efc5;
+    }
+    .hero {
+      background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.3)), url('https://images.unsplash.com/photo-1507499739999-097706ad8914') center/cover;
+      height: 85vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: #fff;
+      padding: 0 1rem;
+    }
+    .hero h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+    .hero p {
+      font-size: 1.3rem;
+      margin-bottom: 2rem;
+    }
+    .cta {
+      padding: 0.8rem 2rem;
+      background-color: #52b788;
+      border: none;
+      color: #fff;
+      font-weight: 700;
+      border-radius: 5px;
+      text-decoration: none;
+      transition: background-color 0.3s;
+    }
+    .cta:hover {
+      background-color: #40916c;
+    }
+    section {
+      padding: 4rem 2rem;
+      max-width: 1200px;
+      margin: auto;
+    }
+    h2 {
+      text-align: center;
+      margin-bottom: 2rem;
+      color: #2d6a4f;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 2rem;
+    }
+    .card {
+      background: #fff;
+      border-radius: 10px;
+      padding: 2rem;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      transition: transform 0.3s;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+    }
+    form input, form textarea, form button {
+      width: 100%;
+      padding: 0.8rem;
+      margin-bottom: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 1rem;
+    }
+    form button {
+      background-color: #2d6a4f;
+      color: #fff;
+      border: none;
+      font-weight: 700;
+    }
+    footer {
+      background: #2d6a4f;
+      color: #fff;
+      text-align: center;
+      padding: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="greenform_logo.png" alt="Greenform Outdoors Logo">
+      <h2>Greenform Outdoors</h2>
+    </div>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#quote">Quote</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero" id="home">
+    <h1>Transform Your Lawn with Greenform Outdoors</h1>
+    <p>Professional artificial turf installation across Milton, Hamilton, and the GTA</p>
+    <a class="cta" href="#quote">Get a Free Quote</a>
+  </section>
+
+  <section id="about">
+    <h2>About Greenform Outdoors</h2>
+    <p style="text-align:center; max-width:800px; margin:auto;">Greenform Outdoors was founded with a vision to make outdoor living more beautiful, sustainable, and low-maintenance. We specialize in residential artificial turf installation and landscape enhancements, delivering modern outdoor solutions that last for years.</p>
+  </section>
+
+  <section id="services">
+    <h2>Our Services</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Artificial Turf Installation</h3>
+        <p>Durable, pet-safe, kid-friendly turf solutions for a clean, vibrant lawn year-round.</p>
+      </div>
+      <div class="card">
+        <h3>Old Lawn Removal</h3>
+        <p>Complete removal of your existing lawn and preparation of the perfect base for turf.</p>
+      </div>
+      <div class="card">
+        <h3>Paving & Patio Design</h3>
+        <p>We offer elegant paving layouts to complement your new turf and create a full backyard experience.</p>
+      </div>
+      <div class="card">
+        <h3>Maintenance Services</h3>
+        <p>Keep your space looking great with seasonal cleanups, edging, trimming, and refresh services.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="gallery">
+    <h2>Project Gallery</h2>
+    <p style="text-align:center;">Showcasing our recent backyard transformations in Milton, Hamilton, and surrounding areas.</p>
+    <div style="text-align:center; padding-top:2rem;">[Insert Image Grid or Slideshow Here]</div>
+  </section>
+
+  <section id="quote">
+    <h2>Get a Free Quote</h2>
+    <form>
+      <input type="text" placeholder="Your Full Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <input type="text" placeholder="Your Location (e.g., Milton)" required>
+      <textarea placeholder="Describe your project, square footage, and needs..." rows="5" required></textarea>
+      <button type="submit">Submit Request</button>
+    </form>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p style="text-align:center;">Call us, email us, or follow us on social platforms to stay connected.</p>
+    <ul style="text-align:center; list-style:none; padding-top:1rem;">
+      <li>📞 (647) 123-4567</li>
+      <li>📧 hello@greenformoutdoors.ca</li>
+      <li>📍 Based in Milton, Serving the GTA</li>
+    </ul>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Greenform Outdoors | Designed with purpose for beautiful outdoor living</p>
+  </footer>
+</body>
+</html>
